@@ -1,0 +1,202 @@
+*{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo_gourmet{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: center;
+}
+
+.bar_nav{
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button_nav{
+    background-color: #fff4f4;
+    border-color: #FF1B1B;
+    padding: 5px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+@media (max-width: 1068px) { /*ESTILOS PARA UNA LAPTOP O TABLET*/
+    *{
+        font-size: 18px;
+    }
+    .titulo_gourmet{
+        width: 15vw;
+    }
+
+    .bar_nav{
+        width: 50vw;
+    }
+
+    .button_nav{
+        background-color: #fff4f4;
+        border-color: #FF1B1B;
+        padding: 5px;
+        border-radius: 15px;
+        width: 30%;
+    }
+
+    .cuerpo_main{
+        background-color: bisque;
+        width: 100vw;
+        height: 60vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cuerpo_main_search{
+        width: 45%;
+        height: 100%;
+    }
+
+    .cuerpo_main_img{
+        margin-top: 20px;
+        width: 45%;
+        height: 100%;
+    }
+
+    .slogan_main{
+        margin-top: 20%;
+    }
+
+    .slogan_main h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .slogan_main p{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .container_search_main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_search_main input{
+        width: 80%;
+        border-radius: 14px;
+        font-size: 14px;
+        height: 34px;
+        border-color: #FF1B1B;
+        border-style: solid;
+    }
+
+    .container_search_main button{
+        background-color: #FF1B1B;
+        color: white;
+        border-radius: 100%;
+        border: none;
+    }
+
+    .container_placeholder_search{
+        display: flex;
+    }
+    .container_placeholder_search h4{
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .cuerpo_main_img{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        rotate: 45deg;
+        height: 80%;
+        margin-right: 10px;
+    }
+
+    .titulo_capsule{
+        width: 80%;
+        height: 30px;
+        border-radius: 20px;
+        margin: 0 auto;
+        background-color: #CD5151;
+        rotate: -5deg;
+        text-align: center;
+        color: white;
+    }
+
+    .container_left{
+        width: 25%;
+        height: 70%;
+        border-radius: 45px;
+    }
+
+    .capsule_left{
+        /* background-color: yellow; */
+        border-radius: 45px;
+        height: 100%;
+        background-image: url('https://sumerlabs.com/default/image-tool-lambda?new-width=0&new-height=0&new-quality=50&url-image=https%3A%2F%2Fsumerlabs.com%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F803b4e04e31cc73a916e7a28d1e8f6e1%252F235bb4c0-8b06-11ec-9046-d909551d87d9%3Falt%3Dmedia%26token%3D460f3f1b-94b5-4e5d-91df-5436b2e18b19');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_left .titulo_capsule {
+        width: 120px;
+        margin: 0;
+        rotate: 0deg;
+    }
+
+    .container_center{
+        width: 35%;
+        height: 90%;
+        border-radius: 55px;
+    }
+
+    .capsule_center{
+        /* background-color: yellow; */
+        border-radius: 45px;
+        height: 100%;
+        background-image: url('https://comeperuano.b-cdn.net/wp-content/uploads/2019/05/arroz-chaufa-peruano-1.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_right{
+        width: 25%;
+        height: 70%;
+    }
+
+    .capsule_right{
+        /* background-color: yellow; */
+        border-radius: 45px;
+        height: 100%;
+        background-image: url('https://www.infobae.com/new-resizer/F85RAAfxdNQvmyFKgoutqJPbou0=/arc-anglerfish-arc2-prod-infobae/public/CAU42VL7CNGTNNO4M34A627VPM.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_right .titulo_capsule {
+        width: 150px;
+        rotate:  0deg;
+        width: 120%;
+    }
+
+}
