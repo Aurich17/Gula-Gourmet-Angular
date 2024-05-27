@@ -1,9 +1,12 @@
-<div class="carousel">
-  <button class="button_carousel" (click)="navigate(-1)"><</button>
+<div class="carousel" (mousedown)="startDrag($event)"
+(mousemove)="drag($event)"
+(mouseup)="endDrag()">
+  <button class="button_carousel" (click)="navigate(1)"><</button>
   <div class="container_elements_carousel">
     <div *ngFor="let item of visibleItems" class="circle_carousel" [style.transform]="getTransformStyle()">
-      <img [src]="item.imageUrl" alt="{{ item.title }}" />
+      <div class="image-background" [style.background-image]="'url(' + item.imageUrl + ')'"></div>
+      <label>{{ item.title }}</label>
     </div>
   </div>
-  <button class="button_carousel" (click)="navigate(1)">></button>
+  <button class="button_carousel" (click)="navigate(-1)">></button>
 </div>
