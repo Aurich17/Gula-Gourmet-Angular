@@ -58,7 +58,7 @@
     }
 
     .cuerpo_main{
-        background-color: bisque;
+        /* background-color: bisque; */
         width: 100vw;
         height: 58vw;
         display: flex;

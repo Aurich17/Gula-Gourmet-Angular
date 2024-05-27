@@ -1,0 +1,30 @@
+@media (max-width: 1068px) { 
+    .carousel{
+        width: 95%;
+        height: 120px;
+        background-color: #CC9B9B;
+        margin: 0 auto;
+        border-radius: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .circle_carousel{
+        width: 12%;
+        height: 80%;
+        background-color: green;
+        border-radius: 100%;
+    }
+
+    .button_carousel{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #E04545;
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+        border: none;
+    }
+}
