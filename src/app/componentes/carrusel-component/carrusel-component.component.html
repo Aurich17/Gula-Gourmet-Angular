@@ -1,8 +1,9 @@
 <div class="carousel">
   <button class="button_carousel" (click)="navigate(-1)"><</button>
-  <div *ngFor="let item of carouselItems; let i = index" class="circle_carousel">
-    <!-- Mostrar contenido del elemento aquí (por ejemplo, imagen) -->
-    <img *ngIf="i === currentIndex" [src]="item.imageUrl" alt="{{ item.title }}" />
+  <div class="container_elements_carousel">
+    <div *ngFor="let item of visibleItems" class="circle_carousel" [style.transform]="getTransformStyle()">
+      <img [src]="item.imageUrl" alt="{{ item.title }}" />
+    </div>
   </div>
   <button class="button_carousel" (click)="navigate(1)">></button>
 </div>

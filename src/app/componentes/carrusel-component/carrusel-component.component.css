@@ -8,12 +8,23 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        /* transition: transform 0.3s ease; */
     }
 
     .circle_carousel{
         width: 12%;
         height: 80%;
         background-color: green;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease; 
+    }
+
+    .circle_carousel img{
+        width: 100%;
+        height: 100%;
         border-radius: 100%;
     }
 
@@ -26,5 +37,14 @@
         font-size: 24px;
         font-weight: 800;
         border: none;
+    }
+
+    .container_elements_carousel{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
     }
 }
