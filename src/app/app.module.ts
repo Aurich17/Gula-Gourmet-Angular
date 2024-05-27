@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainWebComponent } from './main-web/main-web.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarruselComponentComponent } from './componentes/carrusel-component/carrusel-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainWebComponent
+    MainWebComponent,
+    CarruselComponentComponent
   ],
   imports: [
     BrowserModule,

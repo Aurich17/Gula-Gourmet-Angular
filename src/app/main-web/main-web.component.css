@@ -4,6 +4,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
+    /* overflow: hidden; */
 }
 
 .cabecera{
@@ -37,6 +38,8 @@
 @media (max-width: 1068px) { /*ESTILOS PARA UNA LAPTOP O TABLET*/
     *{
         font-size: 18px;
+        /* overflow: hidden; */
+
     }
     .titulo_gourmet{
         width: 15vw;
@@ -57,20 +60,23 @@
     .cuerpo_main{
         background-color: bisque;
         width: 100vw;
-        height: 60vw;
+        height: 58vw;
         display: flex;
         justify-content: space-around;
     }
 
     .cuerpo_main_search{
-        width: 45%;
+        width: 30%;
         height: 100%;
     }
 
     .cuerpo_main_img{
+        /* background-color: purple; */
         margin-top: 20px;
         width: 45%;
-        height: 100%;
+        top: 0; /* Lo coloca en la parte superior */
+        left: 0; /* Lo coloca en la parte izquierda */
+        z-index: 9999; 
     }
 
     .slogan_main{
@@ -122,8 +128,9 @@
         align-items: center;
         flex-direction: row;
         rotate: 45deg;
-        height: 80%;
-        margin-right: 10px;
+        height: 68%;
+        margin-right: 33px;
+        margin-top: 40px;
     }
 
     .titulo_capsule{
